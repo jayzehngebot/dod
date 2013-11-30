@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Heroku ExpressJS Boilerplate
 
 Boilerplate for ExpressJS
@@ -191,3 +192,9 @@ Layouts allow you to have a standard header and footer for a set of pages. It is
 		</body>
 	</html>
 
+=======
+dod
+===
+
+the dod
+>>>>>>> d04994df13d795cc3ebc992a6aebb0002349ef64
