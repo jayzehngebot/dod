@@ -1,47 +1,74 @@
-<div class="row">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-	<div class="span6">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<h1>ExpressJS + Templates Demo</h1>
-		
-		<img src="http://i.imgur.com/ASfCs.gif" alt="Space shuttle animated gif crossing an LA highway">
-		
-		<hr>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<h3>{{pageTitle}}</h3>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
 
-		<!-- astronaut loop -->
-		{{#astros}}
-		
-		<li><a href="/astronauts/{{slug}}">{{name}}</a> - {{source.name}}</li>
-		
-		{{/astros}}
-
-		<hr>
-		<p>
-			<a href="/create">Create a new astronaut</a>
-		</p>
-	</div>
-
-
-
-
-
-
-	<!-- right column -->
-	<div class="span6">
-		<h3>The Demo</h3>
-		<li>
-			<a class="btn" href="https://github.com/johnschimmel/Heroku-ExpressJS-Boilerplate">Github Repo</a>
-		</li>
-		<br>
-	<b>Uses</b>
-		<li><a href="http://expressjs.com">ExpressJS</a> framework</li>
-		<li><a href="https://github.com/vol4ok/hogan-express">Hogan-Express</a> Template Engine</li>
-		<li>MongoLabs Heroku Addon</li>
-		<li>MongooseJS</li>
-		<li>Moment.js</li>
-	</div>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
 
-</div>
+    <div id="container">
+        <!-- <h1>⫏⬡⫐</h1> -->
+<!--         <h1 class="dosis">DOD</h1>
+        <h1 class="sharetech">DOD</h1> -->
+<!--         <h1 class="quicksand">DOD</h1> -->
+<!--         <h1 class="fredoka">DOD</h1>
+        <h1 class="advent">DOD</h1> -->
+        <h1 class="varela">DOD</h1>
+        <div class="moodboard">
+            <div class="penta gon"></div>
+            <div class="penta tron"></div>
+            <div class="penta cremaster"></div>
+            <div class="penta laser"></div>
+            <div class="penta moon"></div>
+            <div class="penta spectre"></div>
+            <div class="penta transfer"></div>
+            <div class="penta net"></div>
+            <div class="penta wood"></div>
+            <div class="penta cut"></div>
+            <div class="penta cruise"></div>
+            <div class="penta vend"></div>
+        </div>
+    </div>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script> -->
+</body>
+
+</html>
