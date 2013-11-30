@@ -6,7 +6,7 @@
  */
 
 var moment = require("moment"); // date manipulation library
-var astronautModel = require("../models/astronaut.js"); //db model
+// var astronautModel = require("../models/astronaut.js"); //db model
 
 
 /*
@@ -22,22 +22,35 @@ exports.index = function(req, res) {
 	// 2) a string of properties to be return, 'name slug source' will return only the name, slug and source returned astronauts
 	// 3) callback function with (err, results)
 	//    err will include any error that occurred
-	//	  allAstros is our resulting array of astronauts
-	astronautModel.find({}, 'name slug source', function(err, allAstros){
+	// 	  allAstros is our resulting array of astronauts
 
-		if (err) {
-			res.send("Unable to query database for astronauts").status(500);
-		};
+	// astronautModel.find({}, 'name slug source', function(err, allAstros){
 
-		console.log("retrieved " + allAstros.length + " astronauts from database");
+	// 	if (err) {
+	// 		res.send("Unable to query database for astronauts").status(500);
+	// 	};
+
+	// 	console.log("retrieved " + allAstros.length + " astronauts from database");
 
 		var templateData = {
-			astros : allAstros,
-			pageTitle : "NASA Astronauts (" + allAstros.length + ")"
+			// astros : allAstros,
+			pageTitle : "dod.io"
 		}
 
 		res.render('index.html', templateData);
-	});
+
+}
+
+exports.firework = function(req,res){
+
+	console.log("fireworks req");
+
+	var templateData = {
+		pageTitle : "prelaunch",
+		misc : "misc"
+	}
+
+	res.render('firework.html', templateData);
 
 }
 
