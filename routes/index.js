@@ -63,17 +63,18 @@ exports.signup = function(req,res){
 	});
 
 	customer.save(function(err){
+
 		if (err) {
 			console.error("Error on saving new customer");
 			console.error(err);
-			return res.send("There was an error when creating a new customer");
+			res.send("There was an error when creating a new customer");
 
 		} else {
 			console.log("new signup");
 			console.log(customer);
 			
 			// redirect to the astronaut's page
-			res.redirect('/thanks');
+			return res.redirect('/thanks');
 		}
 	});
 
@@ -85,5 +86,9 @@ exports.thanks = function(req,res){
 
 exports.secretInfo = function(req,res){
 		res.render('numbers.html')
+}
+
+exports.where = function(req,res){
+		res.render('where.html',{layout:null})
 }
 

@@ -67,6 +67,8 @@ app.post('/mailingSignup', routes.signup);
 
 app.get('/thanks', routes.thanks);
 
+app.get('/where', routes.where);
+
 app.get('/secretinfo', routes.secretInfo)
 
 // //new astronaut routes
