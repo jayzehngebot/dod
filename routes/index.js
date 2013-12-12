@@ -80,7 +80,10 @@ exports.signup = function(req,res){
 }
 
 exports.thanks = function(req,res){
-		res.render('thanks.html');
+		res.render('thanks.html',{layout:null});
 }
 
+exports.secretInfo = function(req,res){
+		res.render('numbers.html')
+}
 

@@ -67,6 +67,8 @@ app.post('/mailingSignup', routes.signup);
 
 app.get('/thanks', routes.thanks);
 
+app.get('/secretinfo', routes.secretInfo)
+
 // //new astronaut routes
 // app.get('/create',routes.astroForm); //display form
 // app.post('/create',routes.createAstro); //form POST submits here

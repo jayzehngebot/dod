@@ -35,8 +35,8 @@ h3{
  body {
     height: 100%;
     color: transparent;
-    /*background: url(../img/dod-process02.jpg) no-repeat center center fixed; */
-     /*background: url(../img/darkmanattan-13.jpg) no-repeat center center fixed; */
+    background: url(../img/heroshot.png) no-repeat center center fixed;
+     /*background: url(../img/darkmanattan-13.jpg) no-repeat center center fixed;*/
     /*font-color:#FFFFF0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -121,8 +121,8 @@ hr{
     margin-right:90px;
 }
 .thanks{
-    margin-top:90px;
-    padding-top:90px;
+    margin-top:30px;
+    padding-top:30px;
 }
 
 .honeydew{
