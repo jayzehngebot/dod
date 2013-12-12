@@ -6,13 +6,13 @@
  */
 
 var moment = require("moment"); // date manipulation library
-// var astronautModel = require("../models/astronaut.js"); //db model
+var potentialCustomer = require("../models/customer.js"); //db model
 
 
 /*
 	GET /
 */
-exports.index = function(req, res) {
+exports.firework = function(req, res) {
 	
 	console.log("main page requested");
 
@@ -41,7 +41,7 @@ exports.index = function(req, res) {
 
 }
 
-exports.firework = function(req,res){
+exports.index = function(req,res){
 
 	console.log("fireworks req");
 
@@ -54,248 +54,33 @@ exports.firework = function(req,res){
 
 }
 
-/*
-	GET /astronauts/:astro_id
-*/
-exports.detail = function(req, res) {
+exports.signup = function(req,res){
 
-	console.log("detail page requested for " + req.params.astro_id);
-
-	//get the requested astronaut by the param on the url :astro_id
-	var astro_id = req.params.astro_id;
-
-	// query the database for astronaut
-	var astroQuery = astronautModel.findOne({slug:astro_id});
-	astroQuery.exec(function(err, currentAstronaut){
-
-		if (err) {
-			return res.status(500).send("There was an error on the astronaut query");
-		}
-
-		if (currentAstronaut == null) {
-			return res.status(404).render('404.html');
-		}
-
-		console.log("Found astro");
-		console.log(currentAstronaut.name);
-
-		// formattedBirthdate function for currentAstronaut
-		currentAstronaut.formattedBirthdate = function() {
-			// formatting a JS date with moment
-			// http://momentjs.com/docs/#/displaying/format/
-            return moment(this.birthdate).format("dddd, MMMM Do YYYY");
-        };
-		
-		//query for all astronauts, return only name and slug
-		astronautModel.find({}, 'name slug', function(err, allAstros){
-
-			console.log("retrieved all astronauts : " + allAstros.length);
-
-			//prepare template data for view
-			var templateData = {
-				astro : currentAstronaut,
-				astros : allAstros,
-				pageTitle : currentAstronaut.name
-			}
-
-			// render and return the template
-			res.render('detail.html', templateData);
-
-
-		}) // end of .find (all) query
-		
-	}); // end of .findOne query
-
-}
-
-/*
-	GET /create
-*/
-exports.astroForm = function(req, res){
-
-	var templateData = {
-		page_title : 'Enlist a new astronaut'
-	};
-
-	res.render('create_form.html', templateData);
-}
-
-/*
-	POST /create
-*/
-exports.createAstro = function(req, res) {
-	
-	console.log("received form submission");
-	console.log(req.body);
-
-	// accept form post data
-	var newAstro = new astronautModel({
+	var customer = new potentialCustomer({
 		name : req.body.name,
-		photo : req.body.photoUrl,
-		source : {
-			name : req.body.source_name,
-			url : req.body.source_url
-		},
+		email : req.body.email,
 		slug : req.body.name.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'_')
-
 	});
 
-	// you can also add properties with the . (dot) notation
-	newAstro.birthdate = moment(req.body.birthdate).toDate();
-	newAstro.skills = req.body.skills.split(",");
-
-	// walked on moon checkbox
-	if (req.body.walkedonmoon) {
-		newAstro.walkedOnMoon = true;
-	}
-	
-	// save the newAstro to the database
-	newAstro.save(function(err){
+	customer.save(function(err){
 		if (err) {
-			console.error("Error on saving new astronaut");
+			console.error("Error on saving new customer");
 			console.error(err);
-			return res.send("There was an error when creating a new astronaut");
+			return res.send("There was an error when creating a new customer");
 
 		} else {
-			console.log("Created a new astronaut!");
-			console.log(newAstro);
+			console.log("new signup");
+			console.log(customer);
 			
 			// redirect to the astronaut's page
-			res.redirect('/astronauts/'+ newAstro.slug)
+			res.redirect('/thanks');
 		}
 	});
-};
-
-exports.editAstroForm = function(req, res) {
-
-	// Get astronaut from URL params
-	var astro_id = req.params.astro_id;
-	var astroQuery = astronautModel.findOne({slug:astro_id});
-	astroQuery.exec(function(err, astronaut){
-
-		if (err) {
-			console.error("ERROR");
-			console.error(err);
-			res.send("There was an error querying for "+ astro_id).status(500);
-		}
-
-		if (astronaut != null) {
-
-			// birthdateForm function for edit form
-			// html input type=date needs YYYY-MM-DD format
-			astronaut.birthdateForm = function() {
-					return moment(this.birthdate).format("YYYY-MM-DD");
-			}
-
-			// prepare template data
-			var templateData = {
-				astro : astronaut
-			};
-
-			// render template
-			res.render('edit_form.html',templateData);
-
-		} else {
-
-			console.log("unable to find astronaut: " + astro_id);
-			return res.status(404).render('404.html');
-		}
-
-	})
 
 }
 
-exports.updateAstro = function(req, res) {
-
-	// Get astronaut from URL params
-	var astro_id = req.params.astro_id;
-
-	// prepare form data
-	var updatedData = {
-		name : req.body.name,
-		photo : req.body.photoUrl,
-		source : {
-			name : req.body.source_name,
-			url : req.body.source_url
-		},
-		birthdate : moment(req.body.birthdate).toDate(),
-		skills : req.body.skills.split(","),
-		walkedOnMoon : (req.body.walkedonmoon) ? true : false
-	}
-
-	// query for astronaut
-	astronautModel.update({slug:astro_id}, { $set: updatedData}, function(err, astronaut){
-
-		if (err) {
-			console.error("ERROR");
-			console.error(err);
-			res.send("There was an error updating "+ astro_id).status(500);
-		}
-
-		if (astronaut != null) {
-			res.redirect('/astronauts/' + astro_id);
-
-
-		} else {
-
-			// unable to find astronaut, return 404
-			console.error("unable to find astronaut: " + astro_id);
-			return res.status(404).render('404.html');
-		}
-	})
+exports.thanks = function(req,res){
+		res.render('thanks.html');
 }
 
-exports.postShipLog = function(req, res) {
 
-	// Get astronaut from URL params
-	var astro_id = req.params.astro_id;
-
-	// query database for astronaut
-	astronautModel.findOne({slug:astro_id}, function(err, astronaut){
-
-		if (err) {
-			console.error("ERROR");
-			console.error(err);
-			res.send("There was an error querying for "+ astro_id).status(500);
-		}
-
-		if (astronaut != null) {
-
-			// found the astronaut
-
-			// concatenate submitted date field + time field
-			var datetimestr = req.body.logdate + " " + req.body.logtime;
-
-			console.log(datetimestr);
-			
-			// add a new shiplog
-			var logData = {
-				date : moment(datetimestr, "YYYY-MM-DD HH:mm").toDate(),
-				content : req.body.logcontent
-			};
-
-			console.log("new ship log");
-			console.log(logData);
-
-			astronaut.shiplogs.push(logData);
-			astronaut.save(function(err){
-				if (err) {
-					console.error(err);
-					res.send(err.message);
-				}
-			});
-
-			res.redirect('/astronauts/' + astro_id);
-
-
-		} else {
-
-			// unable to find astronaut, return 404
-			console.error("unable to find astronaut: " + astro_id);
-			return res.status(404).render('404.html');
-		}
-	})
-
-
-
-}

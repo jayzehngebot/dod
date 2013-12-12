@@ -62,6 +62,11 @@ var routes = require('./routes/index.js');
 app.get('/', routes.index);
 
 app.get('/firework', routes.firework);
+
+app.post('/mailingSignup', routes.signup);
+
+app.get('/thanks', routes.thanks);
+
 // //new astronaut routes
 // app.get('/create',routes.astroForm); //display form
 // app.post('/create',routes.createAstro); //form POST submits here
