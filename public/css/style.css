@@ -35,8 +35,8 @@ h3{
  body {
     height: 100%;
     color: transparent;
-    background: url(../img/heroshot.png) no-repeat center center fixed;
-     /*background: url(../img/darkmanattan-13.jpg) no-repeat center center fixed;*/
+    /*background: url(../img/heroshot.png) no-repeat center center fixed;*/
+     background: url(../img/darkmanattan-13.jpg) no-repeat center center fixed;
     /*font-color:#FFFFF0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
