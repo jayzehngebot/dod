@@ -12,7 +12,7 @@ var potentialCustomer = require("../models/customer.js"); //db model
 /*
 	GET /
 */
-exports.index = function(req, res) {
+exports.firework = function(req, res) {
 	
 	console.log("main page requested");
 
@@ -41,7 +41,7 @@ exports.index = function(req, res) {
 
 }
 
-exports.firework = function(req,res){
+exports.index = function(req,res){
 
 	console.log("fireworks req");
 

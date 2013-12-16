@@ -21,6 +21,7 @@ h1{
     line-height:30px;
     color:#e6ffe6;
     display:inline-block;
+    background-color:rgba(0,0,0,0.5);
 }
 
 h3{
@@ -32,12 +33,23 @@ h3{
     display:inline-block;
 }
 
+a:visited {
+    font-family: 'Quicksand', sans-serif;
+    color:#e6ffe6;
+    font-weight:900;
+}
+a {
+    font-family: 'Quicksand', sans-serif;
+    color:#e6ffe6;
+    font-weight:900;
+}
+
  body {
     height: 100%;
     color: transparent;
     /*background: url(../img/heroshot.png) no-repeat center center fixed;*/
-     background: url(../img/darkmanattan-13.jpg) no-repeat center center fixed;
-    /*font-color:#FFFFF0;
+     background: url(../img/dod-dark.png) no-repeat center center fixed;
+    font-color:#FFFFF0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,7 +57,7 @@ h3{
     font-family:"Varela Round", sans-serif;
     font-size: 30px;
     font-weight: 200;
-    letter-spacing: -0.02em;*/
+    letter-spacing: -0.02em;
     height:100%;
     min-height:100%;
     margin:0;
