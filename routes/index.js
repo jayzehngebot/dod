@@ -34,7 +34,8 @@ exports.firework = function(req, res) {
 
 		var templateData = {
 			// astros : allAstros,
-			pageTitle : "dod.io"
+			pageTitle : "dod.io",
+			misc : "misc"
 		}
 
 		res.render('index.html', templateData);
@@ -50,7 +51,7 @@ exports.index = function(req,res){
 		misc : "misc"
 	}
 
-	res.render('firework.html', templateData);
+	res.render('index.html', templateData);
 
 }
 

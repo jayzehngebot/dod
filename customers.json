@@ -1,0 +1,71 @@
+{ "name" : "JZ", "email" : "jay.zehngebot@gmail.com", "slug" : "jz", "_id" : { "$oid" : "52a94c3dc8ffe1162e000001" }, "__v" : 0 }
+{ "name" : "Natasha", "email" : "Dzurny@me.com", "slug" : "natasha", "_id" : { "$oid" : "52a9e3b75653800200000001" }, "__v" : 0 }
+{ "name" : "Lenora Rigoni", "email" : "lenorarigoni@gmail.com", "slug" : "lenora_rigoni", "_id" : { "$oid" : "52ae01c95ecbb32089000001" }, "__v" : 0 }
+{ "name" : "bobby", "email" : "bobby.zacharias@gmail.com", "slug" : "bobby", "_id" : { "$oid" : "52ae03365ecbb32089000002" }, "__v" : 0 }
+{ "name" : "Vuokko", "email" : "vuokko.aro@gmail.com", "slug" : "vuokko", "_id" : { "$oid" : "52ae04135ecbb32089000003" }, "__v" : 0 }
+{ "name" : "bill zuercher", "email" : "bczuercher@mac.com", "slug" : "bill_zuercher", "_id" : { "$oid" : "52ae081c5ecbb32089000004" }, "__v" : 0 }
+{ "name" : "Alan Garcia", "email" : "alandavidgarcia@gmail.com", "slug" : "alan_garcia", "_id" : { "$oid" : "52ae0a6b5ecbb32089000005" }, "__v" : 0 }
+{ "name" : "Mark Kleeb", "email" : "mark@kleebtronics.com", "slug" : "mark_kleeb", "_id" : { "$oid" : "52ae0ed85ecbb32089000006" }, "__v" : 0 }
+{ "name" : "Anuj Panchal", "email" : "anujpan1@gmail.com", "slug" : "anuj_panchal", "_id" : { "$oid" : "52ae0f015ecbb32089000007" }, "__v" : 0 }
+{ "name" : "Tyler Stoff", "email" : "tylerstoff@gmail.com", "slug" : "tyler_stoff", "_id" : { "$oid" : "52ae0fa15ecbb32089000008" }, "__v" : 0 }
+{ "name" : "maxine", "email" : "iamwentong@hotmail.com", "slug" : "maxine", "_id" : { "$oid" : "52ae130f5ecbb32089000009" }, "__v" : 0 }
+{ "name" : "Luc Succes", "email" : "l2succes@gmail.com", "slug" : "luc_succes", "_id" : { "$oid" : "52ae15145ecbb3208900000a" }, "__v" : 0 }
+{ "name" : "Paul Roales", "email" : "proales@proales.com", "slug" : "paul_roales", "_id" : { "$oid" : "52ae15215ecbb3208900000b" }, "__v" : 0 }
+{ "name" : "hat", "email" : "hatndesign@gmail.com", "slug" : "hat", "_id" : { "$oid" : "52ae166a5ecbb3208900000c" }, "__v" : 0 }
+{ "name" : "Yoni Steinmetz", "email" : "st.yoni@gmail.com", "slug" : "yoni_steinmetz", "_id" : { "$oid" : "52ae18d75ecbb3208900000d" }, "__v" : 0 }
+{ "name" : "Julio", "email" : "juliorap@hotmail.com", "slug" : "julio", "_id" : { "$oid" : "52ae1a5e5ecbb3208900000e" }, "__v" : 0 }
+{ "name" : "Nick Normal", "email" : "nicknormal@gmail.com", "slug" : "nick_normal", "_id" : { "$oid" : "52ae1d475ecbb3208900000f" }, "__v" : 0 }
+{ "name" : "Jean Claude Billmaier", "email" : "hello@marabigo.com", "slug" : "jean_claude_billmaier", "_id" : { "$oid" : "52ae1e755ecbb32089000010" }, "__v" : 0 }
+{ "name" : "Ray", "email" : "ray.w@outlook.com", "slug" : "ray", "_id" : { "$oid" : "52ae20b75ecbb32089000011" }, "__v" : 0 }
+{ "name" : "kay", "email" : "kivanca@gmail.com", "slug" : "kay", "_id" : { "$oid" : "52ae21f35ecbb32089000012" }, "__v" : 0 }
+{ "name" : "Jonathan Steuer", "email" : "jonathan@cyborganic.org", "slug" : "jonathan_steuer", "_id" : { "$oid" : "52ae23425ecbb32089000013" }, "__v" : 0 }
+{ "name" : "Amir Nayeri", "email" : "amiranayeri@gmail.com", "slug" : "amir_nayeri", "_id" : { "$oid" : "52ae27ce5ecbb32089000016" }, "__v" : 0 }
+{ "name" : "errol selkirk", "email" : "errrolo@hotmail.com", "slug" : "errol_selkirk", "_id" : { "$oid" : "52ae2b885ecbb32089000017" }, "__v" : 0 }
+{ "name" : "matt palasz", "email" : "mattyroyboy@gmail.com", "slug" : "matt_palasz", "_id" : { "$oid" : "52ae2dfd82d012d58e000001" }, "__v" : 0 }
+{ "name" : "Neilson Abeel", "email" : "newnetherland@gmail.com", "slug" : "neilson_abeel", "_id" : { "$oid" : "52ae306382d012d58e000002" }, "__v" : 0 }
+{ "name" : "day2", "email" : "day2@gmail.com", "slug" : "day2", "_id" : { "$oid" : "52af527154ddf2019d000001" }, "__v" : 0 }
+{ "name" : "alex vlack", "email" : "alexvlack@raany.com", "slug" : "alex_vlack", "_id" : { "$oid" : "52af6937a51b1a0200000002" }, "__v" : 0 }
+{ "name" : "Olivia Tant", "email" : "otant17@gmail.com", "slug" : "olivia_tant", "_id" : { "$oid" : "52af6ab7a51b1a0200000003" }, "__v" : 0 }
+{ "name" : "Winn Koster", "email" : "wkoster@saintannsny.org", "slug" : "winn_koster", "_id" : { "$oid" : "52af6e3ca51b1a0200000004" }, "__v" : 0 }
+{ "name" : "Harry LR", "email" : "totaldorkist@gmail.com", "slug" : "harry_lr", "_id" : { "$oid" : "52af6e56a51b1a0200000005" }, "__v" : 0 }
+{ "name" : "Theodore Newman", "email" : "tnewman@saintannsny.org", "slug" : "theodore_newman", "_id" : { "$oid" : "52af6e83a51b1a0200000006" }, "__v" : 0 }
+{ "name" : "mike rosenthal", "email" : "mikerosenthal@gmail.com", "slug" : "mike_rosenthal", "_id" : { "$oid" : "52af70bca51b1a0200000007" }, "__v" : 0 }
+{ "name" : "Matt Romein", "email" : "matt.romein@gmail.com", "slug" : "matt_romein", "_id" : { "$oid" : "52af716fa51b1a0200000008" }, "__v" : 0 }
+{ "name" : "don burton", "email" : "don.burton@techstars.com", "slug" : "don_burton", "_id" : { "$oid" : "52af728ba51b1a0200000009" }, "__v" : 0 }
+{ "name" : "assaf", "email" : "mail@assafeshet.com", "slug" : "assaf", "_id" : { "$oid" : "52af74a5e52a550ca0000001" }, "__v" : 0 }
+{ "name" : "alejandra macias", "email" : "ale.maciasrivera@gmail.com", "slug" : "alejandra_macias", "_id" : { "$oid" : "52af7611e52a550ca0000002" }, "__v" : 0 }
+{ "name" : "jeffrey", "email" : "jefflewisband.nyc.3@gmail.com", "slug" : "jeffrey", "_id" : { "$oid" : "52af774ae52a550ca0000003" }, "__v" : 0 }
+{ "name" : "Haley Greenwald-Gonella", "email" : "h.greenwaldgonella@gmail.com", "slug" : "haley_greenwaldgonella", "_id" : { "$oid" : "52af79d9e52a550ca0000004" }, "__v" : 0 }
+{ "name" : "Steff B.", "email" : "spb305@nyu.edu", "slug" : "steff_b", "_id" : { "$oid" : "52af7ef4e52a550ca0000005" }, "__v" : 0 }
+{ "name" : "chris", "email" : "chris.aguda@gmail.com", "slug" : "chris", "_id" : { "$oid" : "52af8012e52a550ca0000006" }, "__v" : 0 }
+{ "name" : "Steven Lehrburger", "email" : "lehrburger@gmail.com", "slug" : "steven_lehrburger", "_id" : { "$oid" : "52af8027e52a550ca0000007" }, "__v" : 0 }
+{ "name" : "ben chao", "email" : "anshing97@hotmail.com", "slug" : "ben_chao", "_id" : { "$oid" : "52af812a214fce82a1000001" }, "__v" : 0 }
+{ "name" : "alex", "email" : "nerdancing@gmail.com", "slug" : "alex", "_id" : { "$oid" : "52af8146214fce82a1000002" }, "__v" : 0 }
+{ "name" : "Andrei Dinu", "email" : "andreidinuionita@gmail.com", "slug" : "andrei_dinu", "_id" : { "$oid" : "52af8162214fce82a1000003" }, "__v" : 0 }
+{ "name" : "Melissa Birnbaum", "email" : "melissa@cityas.org", "slug" : "melissa_birnbaum", "_id" : { "$oid" : "52af8436214fce82a1000004" }, "__v" : 0 }
+{ "name" : "peter", "email" : "peter@chislett.com", "slug" : "peter", "_id" : { "$oid" : "52af85e4214fce82a1000005" }, "__v" : 0 }
+{ "name" : "Derrick Adams", "email" : "mail@derrickadams.com", "slug" : "derrick_adams", "_id" : { "$oid" : "52af871b214fce82a1000006" }, "__v" : 0 }
+{ "name" : "Connie Tilton", "email" : "lelia98@aol.com", "slug" : "connie_tilton", "_id" : { "$oid" : "52af8735214fce82a1000007" }, "__v" : 0 }
+{ "name" : "Jackson Lin", "email" : "think.jackson@gmail.com", "slug" : "jackson_lin", "_id" : { "$oid" : "52af8881214fce82a1000008" }, "__v" : 0 }
+{ "name" : "haylee jung", "email" : "haileyjung2@gmail.com", "slug" : "haylee_jung", "_id" : { "$oid" : "52af89b0214fce82a1000009" }, "__v" : 0 }
+{ "name" : "Jaymes Dec", "email" : "jaymesdec@gmail.com", "slug" : "jaymes_dec", "_id" : { "$oid" : "52af89e3214fce82a100000a" }, "__v" : 0 }
+{ "name" : "matt lorrain", "email" : "mlorrain@google.com", "slug" : "matt_lorrain", "_id" : { "$oid" : "52af8b2a214fce82a100000b" }, "__v" : 0 }
+{ "name" : "Katevisuth Sukpisan", "email" : "ks3503@nyu.edu", "slug" : "katevisuth_sukpisan", "_id" : { "$oid" : "52af8ce7214fce82a100000c" }, "__v" : 0 }
+{ "name" : "Michael Squitieri", "email" : "michael.squitieri@gmail.com", "slug" : "michael_squitieri", "_id" : { "$oid" : "52af8ee0214fce82a100000d" }, "__v" : 0 }
+{ "name" : "john dimatos", "email" : "john@kickstarter.com", "slug" : "john_dimatos", "_id" : { "$oid" : "52af8f63214fce82a100000e" }, "__v" : 0 }
+{ "name" : "Angel", "email" : "angel@kytelabs.com", "slug" : "angel", "_id" : { "$oid" : "52af9129214fce82a100000f" }, "__v" : 0 }
+{ "name" : "bre", "email" : "bre@makerbot.com", "slug" : "bre", "_id" : { "$oid" : "52af919b214fce82a1000010" }, "__v" : 0 }
+{ "name" : "songul", "email" : "songul.aslanturk@gmail.com", "slug" : "songul", "_id" : { "$oid" : "52af91b9214fce82a1000011" }, "__v" : 0 }
+{ "name" : "Danielle", "email" : "djbaskin@gmail.com", "slug" : "danielle", "_id" : { "$oid" : "52af9479214fce82a1000012" }, "__v" : 0 }
+{ "name" : "jan", "email" : "jancastro1@gmail.com", "slug" : "jan", "_id" : { "$oid" : "52af9558214fce82a1000013" }, "__v" : 0 }
+{ "name" : "Andrew Soltys", "email" : "afsoltys@gmail.com", "slug" : "andrew_soltys", "_id" : { "$oid" : "52af9573214fce82a1000014" }, "__v" : 0 }
+{ "name" : "sean mcintypoop", "email" : "boxysean@gmail.com", "slug" : "sean_mcintypoop", "_id" : { "$oid" : "52af966f214fce82a1000015" }, "__v" : 0 }
+{ "name" : "don undeen", "email" : "don.undeen@metmuseum.org", "slug" : "don_undeen", "_id" : { "$oid" : "52af973a214fce82a1000016" }, "__v" : 0 }
+{ "name" : "David Polinchock", "email" : "polinchock@gmail.com", "slug" : "david_polinchock", "_id" : { "$oid" : "52af98f9214fce82a1000017" }, "__v" : 0 }
+{ "name" : "sherry", "email" : "njzyh13@gmail.com", "slug" : "sherry", "_id" : { "$oid" : "52af99cc214fce82a1000018" }, "__v" : 0 }
+{ "name" : "Tak Cheung", "email" : "gettak@gmail.com", "slug" : "tak_cheung", "_id" : { "$oid" : "52af9a59214fce82a1000019" }, "__v" : 0 }
+{ "name" : "Kevin O'Leary", "email" : "olearykm@gmail.com", "slug" : "kevin_oleary", "_id" : { "$oid" : "52af9a7c214fce82a100001a" }, "__v" : 0 }
+{ "name" : "Anand", "email" : "anand.bhat@stern.nyu.edu", "slug" : "anand", "_id" : { "$oid" : "52af9ce8214fce82a100001b" }, "__v" : 0 }
+{ "name" : "darrell", "email" : "dar.deco+itp@gmail.com", "slug" : "darrell", "_id" : { "$oid" : "52af9f9c214fce82a100001c" }, "__v" : 0 }
+{ "name" : "Bryan v", "email" : "bryan.vaccaro@gmail.com", "slug" : "bryan_v", "_id" : { "$oid" : "52afa0bc214fce82a100001d" }, "__v" : 0 }
+{ "name" : "Greg St. Pierre", "email" : "gregorystpierre@gmail.com", "slug" : "greg_st_pierre", "_id" : { "$oid" : "52afa0ff214fce82a100001e" }, "__v" : 0 }
